@@ -1,40 +1,41 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Clarity City", sans-serif;
+}
 .navbar{
-    background-color: lightgrey;
     display: flex  ;
     height: 10vh;
-    justify-content: space-between;
     width:100%;
+    li{
+        font-size: clamp(1rem,2vw,2rem);
+    }
     a{
         color: black;
         text-decoration: none;
     }
-    a :hover{
-        color:greenyellow;
+    a:hover{
+        color: white;
+        text-shadow: 0px 2px 4px #771D14;
     }
 }
 
 .nav_opt{
     display: flex;
     align-items:center;
+    width:90%;
     padding:0;
-    background-color: lime;
-    width:100%;
+    justify-content: space-around;
 }
 
 .nav_list{
     list-style-type: none;
-    display:flex;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.logo{
-    height:auto;
-    width: auto;
-}
 
-body{
-    margin:0;
-    padding: 0;
-    font-family: "Clarity City", sans-serif;
-}
+
+
 

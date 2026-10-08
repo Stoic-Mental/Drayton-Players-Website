@@ -2,13 +2,22 @@ body{
     margin:0;
     padding: 0;
     font-family: "Clarity City", sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 .navbar{
     display: flex  ;
     height: 10vh;
     width:100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1000;
+
+
     li{
-        font-size: clamp(1rem,2vw,2rem);
+        font-size: clamp(0.8rem,2vw,2rem);
     }
     a{
         color: black;
@@ -37,25 +46,24 @@ body{
 
 .Upcoming-Show{
 
-    height:90vh;
+    height:25vh;
+    margin-bottom:1vh;
 }
 
-.Upcoming-S-img{
-    height:75vh;
-}
 
 
 .slider-container {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: 90vh;
+    height: 25vh;
+    margin-top: 12vh;
 
 }
 
 .slider-images img {
     width: 80%;
-    height: 90vh;
+    height: 25vh;
     display: none; /* Hide all images by default */
     margin:0 auto;
     border-radius: 10px;
@@ -85,30 +93,74 @@ body{
 .footer{
     width:100vw;
 
-    height:10vh;
+    height:15vh;
     display: flex;
-
+    background-color: #771D14;
+    justify-content: center;
+    position:relative;
+    bottom:0;
 }
 
 
 .footer-opt{
     display: flex;
-    width:100%;
+    width:95%;
     padding:0;
     justify-content: center;
     gap:clamp(1vw,10px,10vw);
+    position:absolute;
+    bottom:15%;
+    
 
-
+    height: clamp(1rem,2vw,2rem);
     li{
         font-size: clamp(1rem,2vw,2rem);
     }
     a{
-        color: black;
+        color: white;
         text-decoration: none;
     }
     a:hover{
-        color: white;
+        color: black;
         text-shadow: 0px 2px 4px #771D14;
     }
+}
+
+@media(min-width:768px){
+    .Upcoming-Show{
+        height:90vh;
+    }
+    .slider-images img{
+        height:90vh;
+    }
+    .slider-container{
+        height:90vh;
+    }
+}
+
+.book_tickets{
+    background-color: white;
+    border-color: black;
+    border-style:solid;
+    width:50%;
+    height:10vh;
+    justify-content: center;
+
+    a{
+        font-size:0.75rem;
+    }
+    
+}
+
+.booking-button{
+    display: flex;
+    background-color: grey;
+    justify-content: center;    
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;  
+    }
+    
 }
 

@@ -154,8 +154,9 @@ body{
 
 .booking-button{
     display: flex;
+    flex-direction: column;
     background-color: grey;
-    justify-content: center;    
+    justify-content: center;
     a{
         color: black;
         text-decoration: none;
@@ -164,3 +165,10 @@ body{
     
 }
 
+.book-now{
+    display:flex;
+    align-items:center;
+    li{
+        list-style: none;
+    }
+}

@@ -81,7 +81,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 15px;
     cursor: pointer;
     font-size: 18px;
     z-index: 10;
@@ -126,26 +126,20 @@ body{
     }
 }
 
-@media(min-width:768px){
-    .Upcoming-Show{
-        height:90vh;
-    }
-    .slider-images img{
-        height:90vh;
-    }
-    .slider-container{
-        height:90vh;
-    }
-}
+
 
 .book_tickets{
-    background-color: white;
-    border-color: black;
+    background-color: #771D14;
+    border-color: white;
+    li{
+        color:white;
+    }
+    background-color:hover;
     border-style:solid;
-    width:50%;
-    height:10vh;
+    width: 35%;
     justify-content: center;
-
+    height:5vh;
+    border-radius: 10px;
     a{
         font-size:0.75rem;
     }
@@ -154,9 +148,8 @@ body{
 
 .booking-button{
     display: flex;
-    flex-direction: column;
-    background-color: grey;
     justify-content: center;
+    height:5vh;
     a{
         color: black;
         text-decoration: none;
@@ -168,7 +161,91 @@ body{
 .book-now{
     display:flex;
     align-items:center;
+    justify-content: center;
+    height:5vh;
     li{
         list-style: none;
+    }
+}
+
+.upcoming-show-title{
+    display:flex;
+    justify-content: center;
+    margin-bottom:5px;
+}
+
+.ticket-logo{
+    height:5vh;
+    padding-top:5px;
+    filter:invert(100%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px){
+    .Upcoming-Show{
+        height:90vh;
+    }
+    .slider-images img{
+        height:90vh;
+    }
+    .slider-container{
+        height:90vh;
+    }
+    .book-now{
+        font-size:2rem;
+
+    }
+    .booking-button{
+        height:10vh;
+        margin-bottom: 10px;
+    }
+    
+    .book_tickets{
+        width:20%;
+        height:10vh;
+        align-content: center;
+    }
+    .navbar{
+        margin-left:30px;
+    }
+    .ticket-logo{
+        height:10vh;
+        padding-top: 10px;
+    }
+    .upcoming-show-title{
+        font-size: 30px;
     }
 }

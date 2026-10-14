@@ -217,15 +217,34 @@ body{
 .more-info-content{
     display: flex;
     flex-direction: row;
-    gap: 30%;
+
     background-color: green;
     width: 100%;
     justify-content: center;
     font-size: 18px;
 }
 
+.more-info-content-left{
+    text-align: center;
+    width:50%;
+    background-color: lightblue;
+    height:25vh;
+}
+.more-info-content-right{
+    width:50%;
+    background-color: lightcoral;
+    text-align: center;
+    height:25vh;
+}
 
+.map{
+    width:80%;
+    height:15vh;
+}
 
+.contact-details{
+    font-size: 10px;
+}
 
 
 
@@ -298,12 +317,24 @@ body{
         h2{
             font-size: 30px;
         }
+        height:60vh;
 
         
     }
 
     .more-info-content{
-        gap: 50%;
         font-size: 30px;
     }
+    .more-info-content-left{
+            height:60vh;
+    }
+    .more-info-content-right{
+            height:60vh;
+    }
+    .map{
+        height:40vh;
+        width: 50%;
+        margin-top:10px;
+    }
+
 }
